@@ -6,7 +6,20 @@
     <title>list-app</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    
+<body class="h-screen bg-[#212121] text-white flex flex-col items-center
+p-[18px]">
+    <main class="flex flex-col items-center gap-[10px]">
+        <h1 class="text-[36px] font-[600]">To-Do List App</h1>
+        <div>
+            <div class="flex justify-center gap-[5px]">
+                <input class="bg-white text-gray-950 py-[10px] px-[20px] min-w-[400px]" type="text" placeholder="Todo.." id="myInput">
+                <button class="hover:bg-green-800 bg-green-900 py-[10px] px-[20px] cursor-pointer" id="button">Add</button>
+            </div>
+            <ul id="todo_list">
+
+            </ul>
+        </div>
+    </main>
+    <script src="./script.js"></script>
 </body>
 </html>
