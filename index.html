@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>list-app</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body class="h-screen bg-[#212121] text-white flex flex-col items-center
-p-[18px]">
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="h-screen bg-[#212121] text-white flex flex-col items-center p-[15px]"
+  >
     <main class="flex flex-col items-center gap-[10px]">
-        <h1 class="text-[36px] font-[600]">To-Do List App</h1>
-        <div>
-            <div class="flex justify-center gap-[5px]">
-                <input class="bg-white text-gray-950 py-[10px] px-[20px] min-w-[400px]" type="text" placeholder="Todo.." id="myInput">
-                <button class="hover:bg-green-800 bg-green-900 py-[10px] px-[20px] cursor-pointer" id="button">Add</button>
-            </div>
-            <ul id="todo_list">
-
-            </ul>
+      <h1 class="text-[32px] font-[600]">To-Do List App</h1>
+      <div>
+        <div class="flex justify-center items-center gap-[5px]">
+          <input
+            class="bg-white h-[41.6px] text-gray-950 py-[10px] px-[20px] min-w-[400px] focus:outline-2 outline-offset-0 outline-green-700 placeholder:text-gray-500"
+            type="text"
+            placeholder="Todo.."
+            id="myInput"
+          />
+          <button
+            class="hover:bg-green-700 bg-green-800 h-[40px] px-[20px] cursor-pointer"
+            id="button"
+          >Add
+          </button>
         </div>
+        <ul id="todo_list"></ul>
+      </div>
     </main>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
